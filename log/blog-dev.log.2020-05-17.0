@@ -1,0 +1,66 @@
+2020-05-17 09:00:39.132  INFO 6444 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 6444 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-17 09:00:39.156 DEBUG 6444 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-17 09:00:39.156  INFO 6444 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-17 09:00:39.404  INFO 6444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-17 09:00:39.406  INFO 6444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-17 09:00:42.557  INFO 6444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-17 09:00:42.899  INFO 6444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 272ms. Found 6 JPA repository interfaces.
+2020-05-17 09:00:44.869  INFO 6444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-17 09:00:44.947  INFO 6444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-17 09:00:44.947  INFO 6444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-17 09:00:45.195  INFO 6444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-17 09:00:45.195  INFO 6444 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5787 ms
+2020-05-17 09:00:45.794  INFO 6444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-17 09:00:46.169  INFO 6444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-17 09:00:46.862  INFO 6444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-17 09:00:47.173  INFO 6444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-17 09:00:47.514  INFO 6444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-17 09:00:47.573  INFO 6444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-17 09:00:50.044  INFO 6444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-17 09:00:50.074  INFO 6444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-17 09:00:50.124  INFO 6444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-17 09:00:51.856  WARN 6444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-17 09:00:52.091  INFO 6444 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-17 09:00:52.607  INFO 6444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-17 09:00:52.610  INFO 6444 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 18.138 seconds (JVM running for 25.174)
+2020-05-17 09:03:01.690  INFO 6444 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-17 09:03:01.691  INFO 6444 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-17 09:03:01.700  INFO 6444 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-05-17 09:48:38.351  WARN 6444 --- [http-nio-8010-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "uid"]
+2020-05-17 09:49:57.885  WARN 6444 --- [http-nio-8010-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "uid"]
+2020-05-17 10:17:05.208  WARN 6444 --- [http-nio-8010-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 10:17:05.208  WARN 6444 --- [http-nio-8010-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 10:17:05.208  WARN 6444 --- [http-nio-8010-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 10:17:05.217  WARN 6444 --- [http-nio-8010-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 10:17:05.221  WARN 6444 --- [http-nio-8010-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 10:17:05.229  WARN 6444 --- [http-nio-8010-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-05-17 17:20:20.524  WARN 6444 --- [http-nio-8010-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"]
+2020-05-17 17:20:36.114  WARN 6444 --- [http-nio-8010-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"]
+2020-05-17 20:22:27.889  INFO 5704 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 5704 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-17 20:22:27.899 DEBUG 5704 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-17 20:22:27.900  INFO 5704 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-17 20:22:27.999  INFO 5704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-17 20:22:27.999  INFO 5704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-17 20:22:29.205  INFO 5704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-17 20:22:29.351  INFO 5704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 6 JPA repository interfaces.
+2020-05-17 20:22:30.553  INFO 5704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-17 20:22:30.592  INFO 5704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-17 20:22:30.593  INFO 5704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-17 20:22:30.830  INFO 5704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-17 20:22:30.830  INFO 5704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2831 ms
+2020-05-17 20:22:31.299  INFO 5704 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-17 20:22:31.692  INFO 5704 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-17 20:22:32.298  INFO 5704 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-17 20:22:32.512  INFO 5704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-17 20:22:32.793  INFO 5704 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-17 20:22:32.852  INFO 5704 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-17 20:22:34.951  INFO 5704 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-17 20:22:34.986  INFO 5704 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-17 20:22:35.047  INFO 5704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-17 20:22:35.930  WARN 5704 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-17 20:22:36.188  INFO 5704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-17 20:22:36.527  INFO 5704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-17 20:22:36.529  INFO 5704 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 9.506 seconds (JVM running for 11.469)
+2020-05-17 20:22:48.263  INFO 5704 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-17 20:22:48.263  INFO 5704 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-17 20:22:48.269  INFO 5704 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms

@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    mode: HTMl
+  profiles:
+    active: dev
+server:
+  port: 8010
+
+
