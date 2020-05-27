@@ -12,6 +12,8 @@ public interface UserRepository extends JpaRepository<User,Long> {
 
     List<User> findByValidIsTrue();
 
+    Page<User> findByValidIsTrue(Pageable pageable);
+
     /*查找所有有效值为1的用户进行分页展示*/
     @Query(value = "select u from User u where u.valid = true")/*select u from User u where u.valid = true*//*,nativeQuery = true运行原生语句*/
     Page<User> findByValid(Pageable pageable);

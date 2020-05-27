@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
     public Page<User> listUser(Pageable pageable) {
 /*        List<User> users = userRepository.findByValidIsTrue();
         Page<User> all = new PageImpl<>(users);*/
-        return userRepository.findByValid(pageable);
+        return userRepository.findByValidIsTrue(pageable);
     }
 
     @Transactional

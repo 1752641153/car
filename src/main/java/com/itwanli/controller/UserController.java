@@ -5,6 +5,9 @@ import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -41,14 +44,15 @@ public class UserController {
         return ResultModelTool.handleResultModel(resultModel);
     }
 
-/*    @GetMapping("/users/{pageable}")
-    public ResultModel listUser(@PathVariable Pageable pageable){
+    @GetMapping("/users/{page}/{size}")
+    public ResultModel listUser(@PathVariable Integer page,@PathVariable Integer size){
+        Pageable pageable = PageRequest.of(page-1,size);
         Page<User> user = userService.listUser(pageable);
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(0);
         resultModel.setData(user);
         return ResultModelTool.handleResultModel(resultModel);
-    }*/
+    }
 
     @PostMapping("/users")
     public ResultModel addUser(@RequestBody User user){
