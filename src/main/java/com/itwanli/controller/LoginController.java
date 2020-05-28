@@ -1,17 +1,16 @@
 package com.itwanli.controller;
 
-import com.itwanli.entity.Admin;
 import com.itwanli.entity.User;
 import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.AdminService;
 import com.itwanli.service.CarOwnerService;
 import com.itwanli.service.UserService;
-import com.itwanli.utils.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin  //允许跨域访问
 @RestController
@@ -27,7 +26,7 @@ public class LoginController {
     @Autowired
     private CarOwnerService carOwnerService;
 
-    @PostMapping("/park/login")
+    /*@PostMapping("/park/login")
     public ResultModel login(@RequestBody Admin admin, HttpSession session){
         Admin a = adminService.checkAdmin(admin);
         if(a != null){
@@ -50,7 +49,7 @@ public class LoginController {
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(6);
         return ResultModelTool.handleResultModel(resultModel);
-    }
+    }*/
 
     @PostMapping("/android/userlogin")
     public ResultModel userLogin(@RequestBody User user){
