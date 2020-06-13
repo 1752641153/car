@@ -1,11 +1,11 @@
 package com.itwanli.component.interceptor;
 
 import com.alibaba.fastjson.JSON;
-import com.itwanli.entity.Admin;
-import com.itwanli.service.AdminService;
 import com.itwanli.component.utils.HttpContextUtil;
 import com.itwanli.component.utils.Result;
 import com.itwanli.component.utils.TokenUtil;
+import com.itwanli.entity.Admin;
+import com.itwanli.service.AdminService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -22,7 +22,11 @@ public class AdminInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
-        String token = TokenUtil.getRequestToken(request);
+        if (request.getMethod().equals("OPTIONS")) {
+            response.setStatus(HttpServletResponse.SC_OK);
+            return true;
+        }
+        String token = TokenUtil.getRequestToken(request,response);
         if (StringUtils.isBlank(token)) {
             setReturn(response, 400, "用户未登录，请先登录");
             return false;

@@ -3,12 +3,13 @@ package com.itwanli.component.utils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class TokenUtil {
     /**
      * 获取请求的token
      */
-    public static String getRequestToken(HttpServletRequest httpRequest) {
+    public static String getRequestToken(HttpServletRequest httpRequest,HttpServletResponse httpResponse) {
 
         //从header中获取token
         String token = httpRequest.getHeader("token");

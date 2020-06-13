@@ -1,6 +1,5 @@
 package com.itwanli.component.config;
 
-
 import com.itwanli.component.interceptor.AdminInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +29,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
         patterns.add("/swagger-ui.html");
         patterns.add("/swagger-resources/**");
         patterns.add("/park/login");
+        patterns.add("/**");
 
         registry.addInterceptor(authInterceptor()).addPathPatterns("/**").excludePathPatterns(patterns);
     }

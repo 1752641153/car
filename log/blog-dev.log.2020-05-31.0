@@ -1,0 +1,273 @@
+2020-05-31 10:46:08.211  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 10016 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 10:46:08.235 DEBUG 10016 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 10:46:08.235  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 10:46:08.437  INFO 10016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-31 10:46:08.438  INFO 10016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-31 10:46:11.913  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 10:46:12.286  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 315ms. Found 6 JPA repository interfaces.
+2020-05-31 10:46:14.113  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 10:46:14.181  INFO 10016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 10:46:14.181  INFO 10016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 10:46:14.453  INFO 10016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 10:46:14.454  INFO 10016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6016 ms
+2020-05-31 10:46:14.984  INFO 10016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 10:46:15.292  INFO 10016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-31 10:46:15.897  INFO 10016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-31 10:46:16.206  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-31 10:46:16.514  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-31 10:46:16.573  INFO 10016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 10:46:18.867  INFO 10016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 10:46:18.885  INFO 10016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 10:46:18.933  INFO 10016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 10:46:21.023  WARN 10016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 10:46:21.389  INFO 10016 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 10:46:21.604  INFO 10016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 10:46:21.985  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 10:46:22.208  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 10:46:22.272  INFO 10016 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 10:46:22.609  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 10:46:22.610  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 10:46:22.618  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 10:46:22.619  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 10:46:22.623  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 10:46:22.630  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 10:46:22.728  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 10:46:22.731  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 17.633 seconds (JVM running for 20.801)
+2020-05-31 10:46:28.209  INFO 10016 --- [http-nio-8010-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 10:46:28.210  INFO 10016 --- [http-nio-8010-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-31 10:46:28.217  INFO 10016 --- [http-nio-8010-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-05-31 11:27:49.598  INFO 10016 --- [http-nio-8010-exec-8] com.itwanli.websocket.WebSocketServer    : 建立webSocket的连接
+2020-05-31 11:32:23.454  INFO 10016 --- [http-nio-8010-exec-9] com.itwanli.websocket.WebSocketServer    : 关闭webSocket的连接
+2020-05-31 11:32:23.680  INFO 10016 --- [http-nio-8010-exec-10] com.itwanli.websocket.WebSocketServer    : 建立webSocket的连接
+2020-05-31 11:32:24.174  INFO 10016 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:32:24.179  INFO 10016 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:32:24.193  INFO 10016 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-31 11:32:24.202  INFO 10016 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-31 11:32:25.081  INFO 10016 --- [Thread-30] com.itwanli.websocket.WebSocketServer    : 关闭webSocket的连接
+2020-05-31 11:32:25.384  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 10016 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:32:25.385 DEBUG 10016 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:32:25.385  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:32:25.879  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:32:25.937  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 6 JPA repository interfaces.
+2020-05-31 11:32:26.199  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:32:26.201  INFO 10016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:32:26.201  INFO 10016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:32:26.246  INFO 10016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:32:26.246  INFO 10016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 858 ms
+2020-05-31 11:32:26.321  INFO 10016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:32:26.330  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-05-31 11:32:26.336  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-05-31 11:32:26.336  INFO 10016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:32:26.596  INFO 10016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:32:26.597  INFO 10016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:32:26.628  INFO 10016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:32:26.930  WARN 10016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:32:26.999  INFO 10016 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:32:27.055  INFO 10016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:32:27.165  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:32:27.166  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:32:27.176  INFO 10016 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:32:27.229  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:32:27.230  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:32:27.237  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:32:27.238  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:32:27.240  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:32:27.247  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:32:27.258  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:32:27.259  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 1.934 seconds (JVM running for 2785.329)
+2020-05-31 11:32:27.261  INFO 10016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-31 11:32:29.670  INFO 10016 --- [Thread-48] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:32:29.672  INFO 10016 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:32:29.674  INFO 10016 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-05-31 11:32:29.681  INFO 10016 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-05-31 11:32:30.894  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 10016 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:32:30.894 DEBUG 10016 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:32:30.894  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:32:31.297  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:32:31.351  INFO 10016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 6 JPA repository interfaces.
+2020-05-31 11:32:31.539  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:32:31.539  INFO 10016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:32:31.539  INFO 10016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:32:31.571  INFO 10016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:32:31.571  INFO 10016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 672 ms
+2020-05-31 11:32:31.625  INFO 10016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:32:31.632  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-05-31 11:32:31.636  INFO 10016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-05-31 11:32:31.637  INFO 10016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:32:31.807  INFO 10016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:32:31.808  INFO 10016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:32:31.820  INFO 10016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:32:32.049  WARN 10016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:32:32.100  INFO 10016 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:32:32.142  INFO 10016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:32:32.218  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:32:32.219  INFO 10016 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:32:32.226  INFO 10016 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:32:32.265  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:32:32.266  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:32:32.271  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:32:32.272  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:32:32.275  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:32:32.279  INFO 10016 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:32:32.289  INFO 10016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:32:32.289  INFO 10016 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 1.443 seconds (JVM running for 2790.359)
+2020-05-31 11:32:32.292  INFO 10016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-31 11:33:15.909  INFO 17680 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 17680 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:33:15.913 DEBUG 17680 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:33:15.914  INFO 17680 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:33:16.023  INFO 17680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-31 11:33:16.023  INFO 17680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-31 11:33:17.020  INFO 17680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:33:17.139  INFO 17680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 6 JPA repository interfaces.
+2020-05-31 11:33:17.812  INFO 17680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:33:17.821  INFO 17680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:33:17.822  INFO 17680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:33:17.968  INFO 17680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:33:17.968  INFO 17680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1944 ms
+2020-05-31 11:33:18.214  INFO 17680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:33:18.257  INFO 17680 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-31 11:33:18.371  INFO 17680 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-31 11:33:18.477  INFO 17680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-31 11:33:18.597  INFO 17680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-31 11:33:18.617  INFO 17680 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:33:19.487  INFO 17680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:33:19.496  INFO 17680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:33:19.529  INFO 17680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:33:20.322  WARN 17680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:33:20.458  INFO 17680 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:33:20.576  INFO 17680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:33:20.765  INFO 17680 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:33:20.787  INFO 17680 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:33:20.985  INFO 17680 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:33:21.147  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:33:21.149  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:33:21.156  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:33:21.158  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:33:21.161  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:33:21.168  INFO 17680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:33:21.212  INFO 17680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:33:21.215  INFO 17680 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 6.069 seconds (JVM running for 8.217)
+2020-05-31 11:40:07.266  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 12244 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:40:07.269 DEBUG 12244 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:40:07.269  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:40:07.373  INFO 12244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-31 11:40:07.373  INFO 12244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-31 11:40:08.389  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:40:08.502  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 6 JPA repository interfaces.
+2020-05-31 11:40:09.177  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:40:09.186  INFO 12244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:40:09.186  INFO 12244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:40:09.311  INFO 12244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:40:09.312  INFO 12244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1939 ms
+2020-05-31 11:40:09.557  INFO 12244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:40:09.602  INFO 12244 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-31 11:40:09.716  INFO 12244 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-31 11:40:09.816  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-31 11:40:09.935  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-31 11:40:09.952  INFO 12244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:40:10.814  INFO 12244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:40:10.822  INFO 12244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:40:10.855  INFO 12244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:40:11.649  WARN 12244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:40:11.810  INFO 12244 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:40:11.931  INFO 12244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:40:12.117  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:40:12.137  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:40:12.178  INFO 12244 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:40:12.489  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:40:12.491  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:40:12.499  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:40:12.500  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:40:12.504  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:40:12.510  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:40:12.552  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:40:12.555  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 5.979 seconds (JVM running for 7.893)
+2020-05-31 11:52:13.722  INFO 12244 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 11:52:13.723  INFO 12244 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-31 11:52:13.733  INFO 12244 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-05-31 11:52:33.985  INFO 12244 --- [http-nio-8010-exec-3] com.itwanli.websocket.WebSocketServer    : 建立webSocket的连接
+2020-05-31 11:52:34.001  INFO 12244 --- [http-nio-8010-exec-4] com.itwanli.websocket.WebSocketServer    : 收到客户端的ws请求
+2020-05-31 11:52:34.001  INFO 12244 --- [http-nio-8010-exec-4] com.itwanli.websocket.WebSocketServer    : Hello WebSockets!
+2020-05-31 11:52:42.620  INFO 12244 --- [http-nio-8010-exec-5] com.itwanli.websocket.WebSocketServer    : 关闭webSocket的连接
+2020-05-31 11:52:46.405  INFO 12244 --- [http-nio-8010-exec-6] com.itwanli.websocket.WebSocketServer    : 建立webSocket的连接
+2020-05-31 11:52:46.435  INFO 12244 --- [http-nio-8010-exec-7] com.itwanli.websocket.WebSocketServer    : 收到客户端的ws请求
+2020-05-31 11:52:46.435  INFO 12244 --- [http-nio-8010-exec-7] com.itwanli.websocket.WebSocketServer    : Hello WebSockets!
+2020-05-31 11:53:11.178  INFO 12244 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:53:11.181  INFO 12244 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:53:11.186  INFO 12244 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-31 11:53:11.197  INFO 12244 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-31 11:53:12.085  INFO 12244 --- [Thread-12] com.itwanli.websocket.WebSocketServer    : 关闭webSocket的连接
+2020-05-31 11:53:12.347  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 12244 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:53:12.347 DEBUG 12244 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:53:12.347  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:53:12.814  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:53:12.869  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 6 JPA repository interfaces.
+2020-05-31 11:53:13.071  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:53:13.072  INFO 12244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:53:13.072  INFO 12244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:53:13.104  INFO 12244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:53:13.104  INFO 12244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 754 ms
+2020-05-31 11:53:13.164  INFO 12244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:53:13.169  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-05-31 11:53:13.174  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-05-31 11:53:13.174  INFO 12244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:53:13.368  INFO 12244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:53:13.369  INFO 12244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:53:13.384  INFO 12244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:53:13.637  WARN 12244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:53:13.694  INFO 12244 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:53:13.738  INFO 12244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:53:13.829  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:53:13.830  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:53:13.855  INFO 12244 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:53:13.947  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:53:13.949  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:53:13.956  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:53:13.957  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:53:13.961  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:53:13.967  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:53:13.982  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:53:13.983  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 1.691 seconds (JVM running for 789.321)
+2020-05-31 11:53:13.986  INFO 12244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-31 11:53:16.316  INFO 12244 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:53:16.319  INFO 12244 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:53:16.321  INFO 12244 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-05-31 11:53:16.330  INFO 12244 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-05-31 11:53:17.386  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 12244 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-05-31 11:53:17.386 DEBUG 12244 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 11:53:17.387  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-05-31 11:53:18.046  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-31 11:53:18.102  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 6 JPA repository interfaces.
+2020-05-31 11:53:18.300  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-05-31 11:53:18.301  INFO 12244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-31 11:53:18.301  INFO 12244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-31 11:53:18.332  INFO 12244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-31 11:53:18.332  INFO 12244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 943 ms
+2020-05-31 11:53:18.387  INFO 12244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-31 11:53:18.392  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-05-31 11:53:18.396  INFO 12244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-05-31 11:53:18.397  INFO 12244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-31 11:53:18.564  INFO 12244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-31 11:53:18.564  INFO 12244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 11:53:18.579  INFO 12244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-31 11:53:18.801  WARN 12244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-31 11:53:18.851  INFO 12244 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-31 11:53:18.897  INFO 12244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 11:53:18.973  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-31 11:53:18.976  INFO 12244 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-31 11:53:18.983  INFO 12244 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-31 11:53:19.020  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-05-31 11:53:19.021  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-05-31 11:53:19.028  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-05-31 11:53:19.029  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-05-31 11:53:19.031  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-05-31 11:53:19.035  INFO 12244 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-05-31 11:53:19.047  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-05-31 11:53:19.047  INFO 12244 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 1.716 seconds (JVM running for 794.386)
+2020-05-31 11:53:19.049  INFO 12244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-31 11:53:34.730  INFO 12244 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 11:53:34.732  INFO 12244 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-31 11:53:34.738  INFO 12244 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-05-31 11:53:34.740  INFO 12244 --- [http-nio-8010-exec-1] com.itwanli.websocket.WebSocketServer    : 建立webSocket的连接
+2020-05-31 11:53:34.755  INFO 12244 --- [http-nio-8010-exec-2] com.itwanli.websocket.WebSocketServer    : 收到客户端的ws请求
+2020-05-31 11:53:34.756  INFO 12244 --- [http-nio-8010-exec-2] com.itwanli.websocket.WebSocketServer    : Hello WebSockets!

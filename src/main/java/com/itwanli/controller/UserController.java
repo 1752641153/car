@@ -54,7 +54,7 @@ public class UserController {
         return ResultModelTool.handleResultModel(resultModel);
     }
 
-    @PostMapping("/users")
+    @RequestMapping(value = "/users",method = {RequestMethod.POST,RequestMethod.OPTIONS})
     public ResultModel addUser(@RequestBody User user){
         int errorCode = userService.saveUser(user);
         ResultModel resultModel = new ResultModel();

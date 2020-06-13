@@ -107,15 +107,18 @@ public class WebSocketServer {
     }*/
 
 
-    public void sendMessage(Session session,String message){
+/*    public void sendMessage(Session session,String message){
         try {
             session.getBasicRemote().sendText(message);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }*/
+    public void sendMessage(String message) throws IOException{
+        this.session.getBasicRemote().sendText(message);
+        this.session.getAsyncRemote().sendText(message);
     }
-
 
     /*public static void SendMessage(String message,String sessionId) throws IOException {
         Session session = null;
