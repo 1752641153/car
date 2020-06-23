@@ -9,6 +9,9 @@ public interface IndentService {
     /*根据id查询订单记录*/
     Indent getIndent(Long id);
 
+    /*根据订单编号查询订单记录*/
+    Indent getIndent(String numbers);
+
     /*查询所有订单记录*/
     List<Indent> listIndent();
 

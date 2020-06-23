@@ -38,6 +38,11 @@ public class IndentServiceImpl implements IndentService {
         return indent;
     }
 
+    @Override
+    public Indent getIndent(String numbers) {
+        return indentRepository.findByNumbers(numbers);
+    }
+
     @Transactional
     @Override
     public List<Indent> listIndent() {

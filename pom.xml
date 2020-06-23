@@ -92,6 +92,14 @@
             <artifactId>reactor-core</artifactId>
             <version>RELEASE</version>
         </dependency>
+
+        <!-- jdk8 版本 整合jasypt对数据库密码加密 -->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>1.14</version>
+        </dependency>
+
     </dependencies>
 
     <build>

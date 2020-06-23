@@ -15,4 +15,6 @@ public interface IndentRepository extends JpaRepository<Indent,Long> {
 
     @Query(value = "select r from Indent r where r.carOwner.id = ?1")
     List<Indent> findCarOwnerIndent(Long cid);
+
+    Indent findByNumbers(String numbers);
 }

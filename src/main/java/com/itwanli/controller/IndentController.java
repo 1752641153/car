@@ -46,7 +46,17 @@ public class IndentController {
         return ResultModelTool.handleResultModel(resultModel);
     }
 
-    /*根据id查询*/
+    /*根据订单编号查询订单*/
+    @GetMapping("/indent/{numbers}")
+    public ResultModel getOne(@PathVariable String numbers){
+        Indent indent = indentService.getIndent(numbers);
+        ResultModel resultModel = new ResultModel();
+        resultModel.setCode(0);
+        resultModel.setData(indent);
+        return ResultModelTool.handleResultModel(resultModel);
+    }
+
+/*    *//*根据id查询*//*
     @GetMapping("/indent/{id}")
     public ResultModel getOne(@PathVariable Long id){
         Indent indent = indentService.getIndent(id);
@@ -54,7 +64,7 @@ public class IndentController {
         resultModel.setCode(0);
         resultModel.setData(indent);
         return ResultModelTool.handleResultModel(resultModel);
-    }
+    }*/
 
     /*通过post提交来下订单*/
     @PostMapping("/indent/{uid}/{cid}")
