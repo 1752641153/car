@@ -8,6 +8,7 @@ import com.itwanli.entity.Indent;
 import com.itwanli.entity.User;
 import com.itwanli.result.ErrorCode;
 import com.itwanli.service.IndentService;
+import com.itwanli.utils.CopyUtils;
 import com.itwanli.utils.NumbersUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -122,7 +123,8 @@ public class IndentServiceImpl implements IndentService {
             Indent indent1 = indentRepository.findById(id).get();
             indent.setId(id);
             indent.setValid(true);
-            BeanUtils.copyProperties(indent,indent1);
+            //BeanUtils.copyProperties(indent,indent1);
+            CopyUtils.copyProperties(indent,indent1);
             indentRepository.save(indent1);
             System.out.println("更新成功");
             return ErrorCode.UPDATESUCCESS;
