@@ -1,6 +1,8 @@
 package com.itwanli.service;
 
 import com.itwanli.entity.Rent;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -14,6 +16,9 @@ public interface RentService {
 
     /*查询所有用户的租赁记录*/
     List<Rent> listRent();
+
+    /*分页查询*/
+    Page<Rent> pageRent(Pageable pageable);
 
     /*保存租赁时间*/
     int saveRent(Long cid,Rent rent);

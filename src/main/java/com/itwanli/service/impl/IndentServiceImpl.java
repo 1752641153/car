@@ -12,6 +12,8 @@ import com.itwanli.utils.CopyUtils;
 import com.itwanli.utils.NumbersUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -48,6 +50,11 @@ public class IndentServiceImpl implements IndentService {
     @Override
     public List<Indent> listIndent() {
         return indentRepository.findByValidIsTrue();
+    }
+
+    @Override
+    public Page<Indent> pageIndent(Pageable pageable) {
+        return indentRepository.findByValidIsTrue(pageable);
     }
 
     @Override
@@ -139,6 +146,7 @@ public class IndentServiceImpl implements IndentService {
         if (indentRepository.existsById(id)) {
             Indent indent = indentRepository.findById(id).get();
             indent.setValid(false);
+            indentRepository.save(indent);
             System.out.println("删除成功");
             return ErrorCode.DELETESUCCESS;
         }

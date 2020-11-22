@@ -5,6 +5,9 @@ import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.RentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +26,22 @@ public class RentController {
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(0);
         resultModel.setData(rentList);
+        return ResultModelTool.handleResultModel(resultModel);
+    }
+
+    /**
+     * 分页查询车位出租信息
+     * @param page
+     * @param size
+     * @return
+     */
+    @GetMapping("/rent/{page}/{size}")
+    public ResultModel pageRent(@PathVariable Integer page,@PathVariable Integer size){
+        Pageable pageable = PageRequest.of(page-1,size);
+        Page<Rent> rents = rentService.pageRent(pageable);
+        ResultModel resultModel = new ResultModel();
+        resultModel.setCode(0);
+        resultModel.setData(rents);
         return ResultModelTool.handleResultModel(resultModel);
     }
 

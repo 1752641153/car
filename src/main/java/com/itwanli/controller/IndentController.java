@@ -5,6 +5,9 @@ import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.IndentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +26,22 @@ public class IndentController {
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(0);
         resultModel.setData(indentList);
+        return ResultModelTool.handleResultModel(resultModel);
+    }
+
+    /**
+     * 分页查询订单信息
+     * @param current
+     * @param size
+     * @return
+     */
+    @GetMapping("/indent/{current}/{size}")
+    public ResultModel pageIndent(@PathVariable Integer current,@PathVariable Integer size){
+        Pageable pageable = PageRequest.of(current-1,size);
+        Page<Indent> indents = indentService.pageIndent(pageable);
+        ResultModel resultModel = new ResultModel();
+        resultModel.setCode(0);
+        resultModel.setData(indents);
         return ResultModelTool.handleResultModel(resultModel);
     }
 

@@ -5,6 +5,9 @@ import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.CarOwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -29,6 +32,16 @@ public class CarOwnerController {
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(0);
         resultModel.setData(CarOwnerMap);
+        return ResultModelTool.handleResultModel(resultModel);
+    }
+
+    @GetMapping("/carowner/{current}/{size}")
+    public ResultModel pageAllCarOwner(@PathVariable Integer current,@PathVariable Integer size){
+        Pageable pageable = PageRequest.of(current-1,size);
+        Page<CarOwner> carOwners = carOwnerService.listCarOwner(pageable);
+        ResultModel resultModel = new ResultModel();
+        resultModel.setCode(0);
+        resultModel.setData(carOwners);
         return ResultModelTool.handleResultModel(resultModel);
     }
 
@@ -60,7 +73,7 @@ public class CarOwnerController {
         return ResultModelTool.handleResultModel(resultModel);
     }
 
-    @DeleteMapping("/carwner/{id}")
+    @DeleteMapping("/carowner/{id}")
     public ResultModel deleteCarOwner(@PathVariable long id){
         int errorCode = carOwnerService.deleteCarOwner(id);
         ResultModel resultModel = new ResultModel();

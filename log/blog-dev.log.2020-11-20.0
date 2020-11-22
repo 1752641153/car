@@ -1,0 +1,227 @@
+2020-11-20 21:14:56.980  INFO 10372 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 10372 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-11-20 21:14:57.084 DEBUG 10372 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-11-20 21:14:57.085  INFO 10372 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-11-20 21:14:57.296  INFO 10372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 21:14:57.297  INFO 10372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 21:15:01.261  INFO 10372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-20 21:15:01.813  INFO 10372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 493ms. Found 6 JPA repository interfaces.
+2020-11-20 21:15:03.145  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-11-20 21:15:03.380  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 21:15:03.381  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:15:03.382  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:15:03.383  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:15:03.384  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:15:03.390  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:15:03.391  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:15:03.391  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:15:03.392  INFO 10372 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:15:04.357  INFO 10372 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 21:15:04.358  INFO 10372 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 21:15:05.150  INFO 10372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-11-20 21:15:05.228  INFO 10372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 21:15:05.229  INFO 10372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-11-20 21:15:05.532  INFO 10372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 21:15:05.533  INFO 10372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8236 ms
+2020-11-20 21:15:06.176  INFO 10372 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 21:15:06.484  INFO 10372 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-11-20 21:15:07.200  INFO 10372 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-20 21:15:07.522  INFO 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 21:15:07.524  WARN 10372 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-20 21:15:07.899  INFO 10372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 21:15:07.978  INFO 10372 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-11-20 21:15:10.546  INFO 10372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 21:15:10.582  INFO 10372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 21:15:10.742  INFO 10372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-20 21:15:12.732  WARN 10372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 21:15:13.093  INFO 10372 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 21:15:13.272  INFO 10372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 21:15:13.644  INFO 10372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 21:15:13.856  INFO 10372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 21:15:13.896  INFO 10372 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 21:15:14.291  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-11-20 21:15:14.292  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-11-20 21:15:14.300  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-11-20 21:15:14.301  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-11-20 21:15:14.304  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-11-20 21:15:14.312  INFO 10372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-11-20 21:15:14.502  INFO 10372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-20 21:15:14.505  INFO 10372 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 21.672 seconds (JVM running for 27.498)
+2020-11-20 21:16:26.670  INFO 10372 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 21:16:26.672  INFO 10372 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 21:16:26.680  INFO 10372 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-20 21:28:47.275  INFO 13200 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 13200 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-11-20 21:28:47.279 DEBUG 13200 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-11-20 21:28:47.280  INFO 13200 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-11-20 21:28:47.366  INFO 13200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 21:28:47.366  INFO 13200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 21:28:48.547  INFO 13200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-20 21:28:48.719  INFO 13200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 6 JPA repository interfaces.
+2020-11-20 21:28:48.990  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-11-20 21:28:49.049  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 21:28:49.050  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:28:49.050  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:28:49.051  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:28:49.051  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:28:49.051  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:28:49.051  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:28:49.051  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:28:49.052  INFO 13200 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:28:49.395  INFO 13200 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 21:28:49.399  INFO 13200 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 21:28:49.775  INFO 13200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-11-20 21:28:49.787  INFO 13200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 21:28:49.787  INFO 13200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-11-20 21:28:49.932  INFO 13200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 21:28:49.932  INFO 13200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2566 ms
+2020-11-20 21:28:50.237  INFO 13200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 21:28:50.307  INFO 13200 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-11-20 21:28:50.561  INFO 13200 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-20 21:28:50.685  INFO 13200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 21:28:50.688  WARN 13200 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-20 21:28:50.839  INFO 13200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 21:28:50.874  INFO 13200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-11-20 21:28:52.883  INFO 13200 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 21:28:52.894  INFO 13200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 21:28:53.977  INFO 13200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-20 21:28:55.018  WARN 13200 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 21:28:55.357  INFO 13200 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 21:28:55.531  INFO 13200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 21:28:56.644  INFO 13200 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 21:28:57.071  INFO 13200 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 21:28:57.172  INFO 13200 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 21:28:57.646  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-11-20 21:28:57.647  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-11-20 21:28:57.655  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-11-20 21:28:57.656  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-11-20 21:28:57.662  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-11-20 21:28:57.668  INFO 13200 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-11-20 21:28:57.733  INFO 13200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-20 21:28:57.738  INFO 13200 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 11.077 seconds (JVM running for 14.297)
+2020-11-20 21:29:07.482  INFO 13200 --- [http-nio-8010-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 21:29:07.483  INFO 13200 --- [http-nio-8010-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 21:29:07.491  INFO 13200 --- [http-nio-8010-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-20 21:30:07.345  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s403ms171µs600ns).
+2020-11-20 21:32:27.416  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s449ms53µs300ns).
+2020-11-20 21:36:40.765  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s342ms708µs200ns).
+2020-11-20 21:37:33.032  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s267ms514µs200ns).
+2020-11-20 21:39:40.727  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s892ms94µs700ns).
+2020-11-20 21:41:42.518  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s787ms453µs300ns).
+2020-11-20 21:43:25.540  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m43s22ms46µs399ns).
+2020-11-20 21:46:17.128  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m51s588ms330µs201ns).
+2020-11-20 21:47:36.250  WARN 13200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s121ms720µs900ns).
+2020-11-20 21:53:19.878  WARN 13200 --- [http-nio-8010-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "user"]
+2020-11-20 21:54:03.290  INFO 13200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 21:54:03.292  INFO 13200 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 21:54:03.319  INFO 13200 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-20 21:54:03.351  INFO 13200 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-20 21:54:16.621  INFO 15228 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 15228 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-11-20 21:54:16.625 DEBUG 15228 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-11-20 21:54:16.625  INFO 15228 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-11-20 21:54:16.683  INFO 15228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 21:54:16.683  INFO 15228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 21:54:17.819  INFO 15228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-20 21:54:17.967  INFO 15228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136ms. Found 6 JPA repository interfaces.
+2020-11-20 21:54:18.237  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-11-20 21:54:18.294  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 21:54:18.294  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:54:18.295  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:54:18.295  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:54:18.296  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:54:18.296  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 21:54:18.296  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:54:18.296  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:54:18.296  INFO 15228 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 21:54:18.589  INFO 15228 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 21:54:18.591  INFO 15228 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 21:54:18.916  INFO 15228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-11-20 21:54:18.929  INFO 15228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 21:54:18.929  INFO 15228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-11-20 21:54:19.085  INFO 15228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 21:54:19.085  INFO 15228 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2402 ms
+2020-11-20 21:54:19.362  INFO 15228 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 21:54:19.437  INFO 15228 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-11-20 21:54:19.598  INFO 15228 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-20 21:54:19.720  INFO 15228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 21:54:19.722  WARN 15228 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-20 21:54:19.868  INFO 15228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 21:54:19.892  INFO 15228 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-11-20 21:54:20.923  INFO 15228 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 21:54:20.933  INFO 15228 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 21:54:20.975  INFO 15228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-20 21:54:21.849  WARN 15228 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 21:54:22.013  INFO 15228 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 21:54:22.158  INFO 15228 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 21:54:22.551  INFO 15228 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 21:54:22.574  INFO 15228 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 21:54:22.626  INFO 15228 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 21:54:22.887  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-11-20 21:54:22.888  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-11-20 21:54:22.898  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-11-20 21:54:22.899  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-11-20 21:54:22.903  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-11-20 21:54:22.909  INFO 15228 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-11-20 21:54:22.963  INFO 15228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-20 21:54:22.966  INFO 15228 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 7.191 seconds (JVM running for 9.408)
+2020-11-20 21:54:23.340  INFO 15228 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 21:54:23.340  INFO 15228 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 21:54:23.348  INFO 15228 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-20 22:16:15.902  INFO 15228 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 22:16:15.905  INFO 15228 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 22:16:15.931  INFO 15228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-20 22:16:15.992  INFO 15228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-20 22:18:20.345  INFO 13776 --- [restartedMain] com.itwanli.CarportApplication           : Starting CarportApplication on DESKTOP-HI3S0HI with PID 13776 (D:\G-YY\IdeaProjects\springboot\carport\target\classes started by ZhaoWenQin in D:\G-YY\IdeaProjects\springboot\carport)
+2020-11-20 22:18:20.351 DEBUG 13776 --- [restartedMain] com.itwanli.CarportApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2020-11-20 22:18:20.351  INFO 13776 --- [restartedMain] com.itwanli.CarportApplication           : The following profiles are active: dev
+2020-11-20 22:18:20.466  INFO 13776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 22:18:20.467  INFO 13776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 22:18:22.245  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-20 22:18:22.386  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131ms. Found 6 JPA repository interfaces.
+2020-11-20 22:18:22.651  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-11-20 22:18:22.707  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 22:18:22.708  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 22:18:22.708  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 22:18:22.709  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 22:18:22.709  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 22:18:22.710  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 22:18:22.710  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 22:18:22.710  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 22:18:22.710  INFO 13776 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 22:18:23.057  INFO 13776 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 22:18:23.058  INFO 13776 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 22:18:23.805  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-11-20 22:18:23.866  INFO 13776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 22:18:23.867  INFO 13776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-11-20 22:18:24.170  INFO 13776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 22:18:24.171  INFO 13776 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3704 ms
+2020-11-20 22:18:24.626  INFO 13776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 22:18:24.955  INFO 13776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-11-20 22:18:25.682  INFO 13776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-20 22:18:25.906  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 22:18:25.908  WARN 13776 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-20 22:18:26.168  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 22:18:26.248  INFO 13776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-11-20 22:18:28.513  INFO 13776 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 22:18:28.542  INFO 13776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 22:18:28.595  INFO 13776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-20 22:18:29.895  WARN 13776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 22:18:30.136  INFO 13776 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 22:18:30.313  INFO 13776 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 22:18:30.642  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 22:18:30.925  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 22:18:31.005  INFO 13776 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 22:18:31.474  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-11-20 22:18:31.476  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_1
+2020-11-20 22:18:31.488  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2020-11-20 22:18:31.490  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOneUsingGET_2
+2020-11-20 22:18:31.493  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rentsUsingGET_1
+2020-11-20 22:18:31.502  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2020-11-20 22:18:31.631  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-20 22:18:31.635  INFO 13776 --- [restartedMain] com.itwanli.CarportApplication           : Started CarportApplication in 12.248 seconds (JVM running for 15.164)
+2020-11-20 22:18:45.561  INFO 13776 --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 22:18:45.562  INFO 13776 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 22:18:45.570  INFO 13776 --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-11-20 22:43:54.748  WARN 13776 --- [http-nio-8010-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "carowner"]
+2020-11-20 22:55:02.996  WARN 13776 --- [http-nio-8010-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2020-11-20 22:55:11.134  WARN 13776 --- [http-nio-8010-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2020-11-20 22:55:25.096  WARN 13776 --- [http-nio-8010-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2020-11-20 22:55:31.975  WARN 13776 --- [http-nio-8010-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]

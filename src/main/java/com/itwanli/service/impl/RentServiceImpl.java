@@ -7,6 +7,8 @@ import com.itwanli.result.ErrorCode;
 import com.itwanli.service.RentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,6 +42,11 @@ public class RentServiceImpl implements RentService {
     @Override
     public List<Rent> listRent() {
         return rentRepository.findByValidIsTrue();
+    }
+
+    @Override
+    public Page<Rent> pageRent(Pageable pageable) {
+        return rentRepository.findByValidIsTrue(pageable);
     }
 
     @Transactional
@@ -80,6 +87,7 @@ public class RentServiceImpl implements RentService {
         if (rentRepository.existsById(id)) {
             Rent rent = rentRepository.findById(id).get();
             rent.setValid(false);
+            rentRepository.save(rent);
             System.out.println("删除成功");
             return ErrorCode.DELETESUCCESS;
         }

@@ -94,6 +94,7 @@ public class CarOwnerServiceImpl implements CarOwnerService {
         if (carOwnerRepository.existsById(id)) {
             CarOwner carOwner = carOwnerRepository.findById(id).get();
             carOwner.setValid(false);
+            carOwnerRepository.save(carOwner);
             System.out.println("删除成功");
             return ErrorCode.DELETESUCCESS;
         }

@@ -9,6 +9,8 @@ import com.itwanli.service.RechargeService;
 import com.itwanli.utils.NumbersUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,6 +46,11 @@ public class RechargeServiceImpl implements RechargeService {
     @Override
     public List<Recharge> listRecharge() {
         return rechargeRepository.findByValidIsTrue();
+    }
+
+    @Override
+    public Page<Recharge> pageRecharge(Pageable pageable) {
+        return rechargeRepository.findByValidIsTrue(pageable);
     }
 
     @Transactional
@@ -91,6 +98,7 @@ public class RechargeServiceImpl implements RechargeService {
         if (rechargeRepository.existsById(id)) {
             Recharge recharge = rechargeRepository.findById(id).get();
             recharge.setValid(false);
+            rechargeRepository.save(recharge);
             System.out.println("删除成功");
             return ErrorCode.DELETESUCCESS;
         }

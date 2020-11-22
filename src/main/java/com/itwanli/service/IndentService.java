@@ -1,6 +1,8 @@
 package com.itwanli.service;
 
 import com.itwanli.entity.Indent;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -14,6 +16,9 @@ public interface IndentService {
 
     /*查询所有订单记录*/
     List<Indent> listIndent();
+
+    /*分页查询所有订单记录*/
+    Page<Indent> pageIndent(Pageable pageable);
 
     /*查询一个用户的所有订单记录*/
     List<Indent> listIndent(Long uid);

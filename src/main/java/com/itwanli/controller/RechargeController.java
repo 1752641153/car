@@ -5,6 +5,9 @@ import com.itwanli.result.ResultModel;
 import com.itwanli.result.ResultModelTool;
 import com.itwanli.service.RechargeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +26,22 @@ public class RechargeController {
         ResultModel resultModel = new ResultModel();
         resultModel.setCode(0);
         resultModel.setData(rechargeList);
+        return ResultModelTool.handleResultModel(resultModel);
+    }
+
+    /**
+     * 分页查询充值记录
+     * @param current
+     * @param size
+     * @return
+     */
+    @GetMapping("/recharge/{current}/{size}")
+    public ResultModel pageRecharges(@PathVariable Integer current,@PathVariable Integer size){
+        Pageable pageable = PageRequest.of(current-1,size);
+        Page<Recharge> recharges = rechargeService.pageRecharge(pageable);
+        ResultModel resultModel = new ResultModel();
+        resultModel.setCode(0);
+        resultModel.setData(recharges);
         return ResultModelTool.handleResultModel(resultModel);
     }
 

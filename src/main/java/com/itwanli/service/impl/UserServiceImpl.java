@@ -94,6 +94,7 @@ public class UserServiceImpl implements UserService {
         if (userRepository.existsById(id)) {
             User user = userRepository.findById(id).get();
             user.setValid(false);
+            userRepository.save(user);
             System.out.println("删除成功");
             return ErrorCode.DELETESUCCESS;
         }
